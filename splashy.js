@@ -1,14 +1,4 @@
-const http = require('http');
-const express = require('express');
-const app = express();
-app.get("/", (request, response) => {
-  response.sendStatus(200);
-});
-app.listen(process.env.PORT);
-setInterval(() => {
-  http.get(`http://nmiaoweisue00.glitch.me/`);
-  }, 280000);
-  const discord = require('discord.js');
+const discord = require('discord.js');
 const splashy = new discord.Client();
 const config = require('./config.json');
 let prefix = config.prefix;
